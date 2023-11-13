@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="script.js" async></script>
+    <title>Mind3dChile</title>
+</head>
+<body>
+    <header>
+        <!--h1>El único limite es tu Imaginación</h1>-->
+    </header>
+    <nav class="navegacion">
+        <a href="index.html" class="activo">Tienda</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="registro.html">Registro</a>
+    </nav>
+
+    <section class="contenedor">
+        <!--Contenedor de elementos-->
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Dr. Strange</span>
+                <img class="img-item" src="img/strange2.jpg" alt="imagen strange2">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Spider-Man</span>
+                <img class="img-item" src="img/spider2.jpg" alt="imagen spider2">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Stitch</span>
+                <img class="img-item" src="img/mordelon2.jpg" alt="imagen stitch">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Wanda Halloween</span>
+                <img class="img-item" src="img/wanda.jpg" alt="imagen wanda">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Oficial Mujer FACH</span>
+                <img class="img-item" src="img/oficial mujer.PNG" alt="imagen oficial">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Oficial FACH</span>
+                <img class="img-item" src="img/oficial.PNG" alt="imagen FACH">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Suboficial Mayor FACH</span>
+                <img class="img-item" src="img/SOM.PNG" alt="imagen SOM">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Huaso Chileno</span>
+                <img class="img-item" src="img/huaso.PNG" alt="imagen huaso">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Majin Buu</span>
+                <img class="img-item" src="img/maginboo.jpg" alt="imagen majin">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Pinochet</span>
+                <img class="img-item" src="img/pinochet.jpg" alt="imagen Pinochet">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Creeper</span>
+                <img class="img-item" src="img/creaper.jpg" alt="imagen creaper">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+
+            <div class="item">
+                <span class="titulo-item">Soporte Groot</span>
+                <img class="img-item" src="img/grood.jpg" alt="imagen groot">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div><!--Imagen Item-->
+        </div>
+
+        <!--Caarrito de Compra-->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2 style="color: white;">Tú Carrito</h2>
+            </div>
+            <div class="carrito-items">
+                <!--
+                <div class="carrito item">
+                    <img src="img/strange2.jpg" alt="imagen strange2" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Dr. Strange</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>
+
+                <div class="carrito item">
+                    <img src="img/spider2.jpg" alt="imagen spider2" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Spider-Man</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </div>-->
+            </div>
+
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tú Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__texto">
+            Mind3dChile - Todos los derechos Reservados 2023.
+        </p>
+    </footer>
+</body>
+</html>
